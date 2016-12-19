@@ -5,6 +5,13 @@ $(document).ready(function(){
 	readyConfirm();
 })
 
+var readyflag = false;
+
+$("#processModal").on('hidden.bs.modal', function () {
+	if (!readyflag)
+		$("#processModal").modal("show");
+})
+
 function readyConfirm()
 {
 	$.ajax({
@@ -15,9 +22,6 @@ function readyConfirm()
 			if (data.msg == false)
 			{
 				//console.log(data.currentPos);
-				$("#processModal").on('hidden.bs.modal', function () {
-					$("#processModal").modal("show");
-				})
 				var currentText = "width:" + data.currentPos + "%;";
 				$("#processShowBar").attr("style", currentText);
 				if (data.currentPos >= 33 && data.currentPos < 66)
@@ -28,10 +32,7 @@ function readyConfirm()
 			}
 			else
 			{
-				
-				$("#processModal").on('hidden.bs.modal', function () {
-					$("#processModal").modal("hide");
-				})
+				readyflag = true;
 				$("#modalButton").show();
 				$("#modalButton").attr("class", "btn btn-success");
 				$("#modalButton").html("确定");
