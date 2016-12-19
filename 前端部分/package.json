@@ -1,0 +1,11 @@
+{
+  "name": "sefzd",
+  "version": "1.0.0",
+  "description": "My homework for PA experiment 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HuangChao",
+  "license": "ISC"
+}

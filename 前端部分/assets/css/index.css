@@ -1,0 +1,95 @@
+*
+{
+	font-family:"Microsoft YaHei" ! important;
+}
+
+body
+{
+	background-color:#f9f9f9;
+}
+
+.center
+{
+	width:auto;
+	display:table;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#resultBoard
+{
+	padding-left:0;
+	padding-right:0;
+	background-color:#f0f0f0;
+}
+
+.resultBlock
+{
+	background-color:rgba(255,255,255,0.3);
+	
+	padding-top:7px;
+	border-top-style:solid;
+	border-top-color:#c0c0c0;
+	border-top-width:3px;
+}
+
+.textName
+{
+	font-size:18px;
+	font-family:arial,sans-serif;
+	color:#1a0dab;
+}
+
+.wordFreq
+{
+	font-size:14px;
+	font-family:arial,sans-serif;
+	color:#006621;
+}
+
+.title
+{
+	font-size:14px;
+	font-family:arial,sans-serif;
+	color:#FF3300;
+}
+
+.question
+{
+	font-size:14px;
+	font-family:arial,sans-serif;
+	color:#FF6600;
+}
+
+.author
+{
+	font-size:14px;
+	font-family:arial,sans-serif;
+	color:#FF9900;
+}
+
+.highLight
+{
+	color:#ff0000;
+}
+
+.plaintext
+{
+	font-size:14px;
+	font-family:arial,sans-serif;
+}
+
+.showfullspan
+{
+	font-size:12px;
+	font-family:arial,sans-serif;
+	color:#484848;
+}
+
+.showfullspan:hover
+{
+	
+	font-size:12px;
+	font-family:arial,sans-serif;
+	color:#33CCCC;
+}
