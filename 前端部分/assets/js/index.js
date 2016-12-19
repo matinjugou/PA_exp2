@@ -65,12 +65,12 @@ function getRes(){
     success: function(data){
 	if (data.code == 200)
 	{
-		if (data.msg.toString() == "没有找到相关信息\r\n\r\n")
+		if (data.msg.toString() == "没有找到相关信息")
 		{
 			$("#resultBoard").fadeOut(200,function(){
 				$("#resultBoard").empty();
 			});
-			alert("抱歉，没有找到相关信息");
+			$("#noFoundModal").modal("show");
 		}
 		else
 		{
